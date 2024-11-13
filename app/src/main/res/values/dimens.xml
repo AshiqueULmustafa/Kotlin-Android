@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="topbtn">48dp</dimen>
-    <dimen name="topbtnradius">24dp</dimen>
+    <dimen name="topbtn">28dp</dimen>
+    <dimen name="topbtnradius">14dp</dimen>
     <dimen name="btnmarginEnd">4dp</dimen>
 </resources>

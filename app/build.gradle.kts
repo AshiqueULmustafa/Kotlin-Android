@@ -9,8 +9,8 @@ android {
 
     defaultConfig {
         applicationId = "com.ashique.mycalculator"
-        minSdk = 24
-        targetSdk = 35
+        minSdk = 34
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -51,8 +51,8 @@ android {
 
 dependencies {
     implementation("com.google.android.material:material:1.9.0")
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation ("androidx.core:core-ktx:1.13.1")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)

@@ -5,12 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="4dp"
     android:background="#333333"
     android:orientation="vertical"
     android:padding="8dp"
-
-    android:weightSum="14"
+    android:weightSum="16"
     tools:context=".Calculator">
 
     <LinearLayout
@@ -20,7 +18,6 @@
 
         <Button
             android:id="@+id/topRedBtn"
-            android:text=""
             android:contentDescription="button1"
             android:layout_width="@dimen/topbtn"
             android:layout_height="@dimen/topbtn"
@@ -31,28 +28,28 @@
             android:contentDescription="button2"
             android:layout_width="@dimen/topbtn"
             android:layout_height="@dimen/topbtn"
-            android:layout_marginLeft="8dp"
-            android:text=""
+            android:layout_marginStart="8dp"
             android:background="@drawable/top_button_shape3" />
 
         <Button
             android:id="@+id/topGreenBtn"
             android:contentDescription="button3"
-            android:text=""
             android:layout_width="@dimen/topbtn"
             android:layout_height="@dimen/topbtn"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:background="@drawable/top_button_shape2" />
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3">
+        android:layout_weight="5">
 
         <TextView
+            android:id="@+id/tvDisplay"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
             android:text="0"
             android:textAlignment="textEnd"
@@ -71,7 +68,6 @@
         <ImageButton
             android:contentDescription="image button description"
             android:layout_marginEnd="@dimen/btnmarginEnd"
-            android:text=""
             android:id="@+id/btnC"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -79,16 +75,15 @@
             android:background="@drawable/btn_shape"
             android:src="@drawable/icon_c"/>
 
-        <Button
-            android:id="@+id/btnPlusAndMinus"
+        <ImageButton
+            android:id="@+id/btnDel"
             android:layout_marginEnd="@dimen/btnmarginEnd"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="+/-"
+            android:contentDescription="this button is for deleting single element"
             android:background="@drawable/btn_shape"
-            android:textColor="@color/white"
-            android:textSize="64sp" />
+             android:src="@drawable/del"/>
 
         <Button
             android:id="@+id/btnPercentage"
@@ -104,8 +99,7 @@
         <ImageButton
             android:contentDescription="image button description"
 
-            android:text=""
-            android:id="@+id/btnaDivide"
+            android:id="@+id/btnDivide"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -157,7 +151,6 @@
         <ImageButton
             android:contentDescription="image button description"
 
-            android:text=""
             android:id="@+id/btnMultiplication"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -188,7 +181,7 @@
             android:textSize="64sp" />
 
         <Button
-            android:id="@+id/bntFive"
+            android:id="@+id/btnFive"
             android:layout_marginEnd="@dimen/btnmarginEnd"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -206,12 +199,12 @@
             android:background="@drawable/number_btn_shape"
             android:textColor="@color/white"
             android:text="6"
+
             android:layout_marginEnd="@dimen/btnmarginEnd"
             android:textSize="64sp" />
+
         <ImageButton
             android:contentDescription="image button description"
-
-            android:text=""
             android:id="@+id/btnSubtract"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -265,7 +258,6 @@
         <ImageButton
             android:contentDescription="image button description"
 
-            android:text=""
             android:id="@+id/btnAdd"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -305,8 +297,6 @@
 
         <ImageButton
             android:contentDescription="image button description"
-
-            android:text=""
             android:id="@+id/btnEqual"
             android:layout_width="0dp"
             android:layout_height="match_parent"
