@@ -48,13 +48,16 @@
         <TextView
             android:id="@+id/tvDisplay"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="20dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="5dp"
             android:text="0"
             android:textAlignment="textEnd"
             android:textColor="@color/white"
             android:textSize="64sp" />
+
     </RelativeLayout>
 
     <LinearLayout

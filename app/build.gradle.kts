@@ -50,6 +50,8 @@ android {
 }
 
 dependencies {
+
+    implementation ("net.objecthunter:exp4j:0.4.8")
     implementation("com.google.android.material:material:1.9.0")
     implementation ("androidx.core:core-ktx:1.13.1")
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
