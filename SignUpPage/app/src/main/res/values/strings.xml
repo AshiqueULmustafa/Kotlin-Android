@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SignUpPage</string>
+    <string name="first_name">First Name</string>
+    <string name="firstname_miss">*First Name Missing</string>
+    <string name="last_name">Last Name</string>
+    <string name="lastname_miss">*Last Name Missing</string>
+    <string name="dob">Date Of Birth (DD-MM-YYYY)</string>
+    <string name="dob_miss">*Date of Birth Missing</string>
+    <string name="email">Email</string>
+    <string name="email_miss">*Email Address Missing</string>
+    <string name="phone">Phone</string>
+    <string name="phone_miss">*Phone Number Missing</string>
+    <string name="password">Password</string>
+    <string name="pass_miss">*Password Missing</string>
+    <string name="address">Address</string>
+    <string name="address_miss">*Address Missing</string>
+    <string name="bad_pass">*The Password Should have minimum 8 character</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="miss_match">Both the Password doesn\'t match</string>
+    <string name="cpass_miss">*Please Confirm the Password</string>
+    <string name="submit">Submit</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="img_size">"32dp"</string>
+</resources>
+

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="32dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/sign_up"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etFname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ripple"
+            android:hint="@string/first_name"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/missfname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/firstname_miss"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+        <EditText
+            android:id="@+id/etLname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ripple"
+            android:hint="@string/last_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/misslname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lastname_miss"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/etDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ripple"
+            android:hint="@string/dob"
+            android:inputType="date"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/missdob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dob_miss"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ripple"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/missaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address_miss"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:autofillHints=""
+            android:background="@drawable/ripple"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="@color/black"
+           />
+
+        <TextView
+            android:id="@+id/missemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email_miss"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ripple"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/missphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_miss"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ripple"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/black"
+             />
+        <TextView
+            android:id="@+id/misspass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pass_miss"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tvBadPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bad_pass"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+
+
+        <EditText
+            android:id="@+id/etCpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ripple"
+            android:hint="@string/confirm_pass"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/black"
+             />
+        <TextView
+            android:id="@+id/misscpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cpass_miss"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/missmatchpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/miss_match"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/submit"
+            android:background="@drawable/ripple"
+            android:textSize="20sp"
+            android:textStyle="bold"
+             />
+
+
+    </LinearLayout>
+</ScrollView>
