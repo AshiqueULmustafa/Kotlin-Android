@@ -14,7 +14,7 @@ import java.lang.IllegalArgumentException
 class Calculator : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calculator)
+        setContentView(R.layout.activity_calculato_constraint)
 
         val Display : TextView = findViewById(R.id.tvDisplay)
         val BtnC: ImageButton = findViewById(R.id.btnC)
